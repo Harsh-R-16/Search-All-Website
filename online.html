@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Anything</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        section {
+            height: 1000px;
+            width: 100%;
+            background-color: #bde0fe;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            margin: 0px 0px;
+            padding: 20px 0px;
+            border-bottom: 1px solid black;
+            border-radius: 10px;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        form {
+            background-color: #f1faee;
+            /* background-color: #e5e5e5; */
+            height: 20%;
+            width: 32%;
+            margin: 15px 0.6667%;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #bde0fe;
+        }
+
+        button:hover {
+            background-color: #94b4cf;
+        }
+
+        img {
+            height: 60px;
+            width: 60px;
+            float: left;
+            border-radius: 50%;
+            margin: 6% 4% 0% 5%;
+            border: 1px solid black;
+        }
+
+        input {
+            width: 200px;
+            margin: 10% 0px;
+            border: 1.4px solid #14213d;
+        }
+
+        #main {
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        label {
+            font-weight: bold;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media (max-width: 1440px) {
+            form {
+                width: 49%;
+                margin: 15px auto;
+            }
+        }
+
+        @media (max-width: 960px) {
+            form {
+                width: 510px;
+                margin: 15px auto;
+            }
+
+            section {
+                height: 2000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Search in Top Websites</h1>
+
+        <div id="main">
+            <form action="https://www.google.com/search">
+                <div class="class">
+                    <img src="https://th.bing.com/th/id/OIP.FvWn9W-UVCp1fDUG7wmRfgHaHa?w=177&h=180&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+
+                    <label for="google">Google</label>
+                    <input type="text" id="google" name="q">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://www.facebook.com/search/top">
+                <div class="class"><img
+                        src="https://th.bing.com/th/id/OIP.i04IE-gT_qtsWY93iHsUhQHaHa?w=208&h=208&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="facebook">Facebook</label>
+                    <input type="text" id="facebook" name="q">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://www.linkedin.com/search/results/all">
+                <div class="class"><img
+                        src="https://th.bing.com/th/id/OIP.R7_DtfkXYtBlyuGXUEuewQHaHa?w=161&h=180&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="linkedin">Linkedin</label>
+                    <input type="text" id="linkedin" name="keywords">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://www.reddit.com/search">
+                <div class="class"><img
+                        src="https://th.bing.com/th/id/OIP.ehQBJvgH2nrvUjF3eDci5gHaHa?w=192&h=192&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="reddit">Reddit</label>
+                    <input type="text" id="reddit" name="q">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://www.youtube.com/results">
+                <div class="class"><img
+                        src="https://th.bing.com/th/id/OIP.j2SV4dPGWvbmDCkNT0juYwHaHv?w=202&h=210&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="youtube">Youtube</label>
+                    <input type="text" id="youtube" name="search_query">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://twitter.com/search">
+                <div class="class"><img
+                        src="https://th.bing.com/th/id/OIP.2hsJBtNojXgUOzPT7PZ-KAHaHa?w=188&h=189&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="twitter">Twitter</label>
+                    <input type="text" id="twitter" name="q">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://www.flipkart.com/search">
+                <div class="class"><img
+                        src="https://th.bing.com/th/id/OIP.XiJaMWJmd7llMMmf-3vOYAHaHa?w=168&h=180&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="flipkart">Flipkart</label>
+                    <input type="text" id="flipkart" name="q">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://www.amazon.in/s">
+                <div class="class"> <img
+                        src="https://th.bing.com/th/id/OIP.HqCpZrQPrhStI_IuhFOZcAHaHa?w=181&h=181&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="amazon">Amazon</label>
+                    <input type="text" id="amazon" name="k">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://in.search.yahoo.com/search">
+                <div class="class"> <img
+                        src="https://th.bing.com/th/id/OIP.cyhkcpIJVF7-tpTRDu3PCwHaHa?w=171&h=180&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="yahoo">Yahoo</label>
+                    <input type="text" id="yahoo" name="q">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://www.aliexpress.com/wholesale">
+                <div class="class"> <img
+                        src="https://th.bing.com/th/id/OIP.CkKlSRQvA23uh2x36Cz2ggHaD4?w=289&h=180&c=7&o=5&dpr=1.25&pid=1.7"
+                        alt="">
+                    <label for="aliexpress">AliExpress</label>
+                    <input type="text" id="aliexpress" name="SearchText">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://stackoverflow.com/search">
+                <div class="class"> <img
+                        src="https://th.bing.com/th/id/OIP.cdT1okylnJkiQ3krgSccYgHaFj?w=240&h=180&c=7&o=5&dpr=1.25&pid=1.7">
+                    <label for="stackoverflow">StackOverFlow</label>
+                    <input type="text" id="stackoverflow" name="q" style="width: 155px;">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <form action="https://in.pinterest.com/search/pins">
+                <div class="class"> <img
+                        src="https://th.bing.com/th/id/OIP.y3Qjn4tYrulXeOwSYJeUkAHaHa?w=193&h=193&c=7&o=5&dpr=1.25&pid=1.7">
+                    <label for="pinterest">Pinterest</label>
+                    <input type="text" id="pinterest" name="q">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
